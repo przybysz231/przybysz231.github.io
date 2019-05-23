@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+   <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
 
   <title>AI Project</title>
 
@@ -28,7 +31,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start surf</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -39,7 +42,7 @@
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+            <a class="nav-link js-scroll-trigger" href="#projects">HTML Forms</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
@@ -65,9 +68,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2 class="text-white mb-4">Built with Bootstrap 4</h2>
-          <p class="text-white-50">Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-            <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+          <h2 class="text-white mb-4">Powered by bootstrap</h2>
+          <p class="text-white-50">Features included below</p>
         </div>
       </div>
       <img src="img/ipad.png" class="img-fluid" alt="">
@@ -76,57 +78,154 @@
 
   <!-- Projects Section -->
   <section id="projects" class="projects-section bg-light">
-    <div class="container">
-
-      <!-- Featured Project Row -->
-      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
-        </div>
-        <div class="col-xl-4 col-lg-5">
-          <div class="featured-text text-center text-lg-left">
-            <h4>Shoreline</h4>
-            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project One Row -->
-      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
-        </div>
-        <div class="col-lg-6">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Misty</h4>
-                <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
-                <hr class="d-none d-lg-block mb-0 ml-0">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project Two Row -->
-      <div class="row justify-content-center no-gutters">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
-        </div>
-        <div class="col-lg-6 order-lg-first">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-right">
-                <h4 class="text-white">Mountains</h4>
-                <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
-                <hr class="d-none d-lg-block mb-0 mr-0">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <div class="container">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+ 
+    <style>
+        .slidecontainer {
+             width: 100%;
+        }
+   
+        .slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 25px;
+            background: #d3d3d3;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+   
+        .slider:hover {
+            opacity: 1;
+        }
+   
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            background: #4CAF50;
+            cursor: pointer;
+        }
+   
+        .slider::-moz-range-thumb {
+            width: 25px;
+            height: 25px;
+            background: #4CAF50;
+            cursor: pointer;
+        }
+    </style>
+</head>
+ 
+<body>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="200" value="50" class="slider" id="myRange">
+        <p>k: <span id="demo"></span></p>
+    </div>
+  
+      <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange2">
+        <p>T: <span id="demo2"></span></p>
+    </div>
+             
+    Człon inercyjny pierwszego rzędu, odpowiedź skokowa 
+        $$h(t) = k*(1-e^{t/T})*1I(t)$$ 
+    <canvas  id="wykres" width="1000" height="600">
+ 
+        <script>
+            const e = 2.72;
+            const k = 200;
+            const T = 100;
+            var canvas = document.getElementById('wykres');
+            var ctx = canvas.getContext('2d');
+ 
+            $(document).ready(function() {
+                drawUklad();
+                drawWykres();
+ 
+                $('#myRange').on('input', function() {
+                    clearUkladIWykresy();
+                    drawUklad();
+                    drawWykres();
+                });
+        
+         $('#myRange2').on('input', function() {
+                    clearUkladIWykresy();
+                    drawUklad();
+                    drawWykres();
+                });
+            })
+ 
+            function drawUklad() {
+                var w = canvas.width;
+                var h = canvas.height-200;
+                var range = 100;
+                var bl = 1;
+ 
+                //slider
+                var slider = document.getElementById("myRange");
+        var slider2 = document.getElementById("myRange2");
+                var output = document.getElementById("demo");
+        var output2 = document.getElementById("demo2");
+                output.innerHTML = slider.value;
+        output2.innerHTML = slider2.value;
+ 
+                slider.oninput = function() {
+                    output.innerHTML = this.value;
+                }
+ 
+                ctx.strokeStyle = "red";
+               ctx.lineWidth = 2; 
+               ctx.beginPath();
+               ctx.moveTo(0,h-100);
+               ctx.lineTo(w,h-100);
+               ctx.closePath();
+               ctx.stroke();
+           
+               ctx.beginPath(); 
+               ctx.moveTo(range,0);
+               ctx.lineTo(range,h);
+               ctx.closePath();
+               ctx.stroke();
+               
+               for(i=0;i<=10;i++) { 
+                   ctx.fillText((i-1)*range,i*range +5,h - 105);
+               }
+               for(i=0;i<=6;i++) { 
+                   ctx.fillText(range*(i-1),range + 5,h-i*range -5 );
+               }
+               //opisy osi
+               ctx.fillText('t(s)',980,295);
+               ctx.fillText('k',105,10);
+           }
+ 
+           function drawWykres() {
+               //wykres
+               ctx.strokeStyle = "red";
+               ctx.moveTo(100,300);
+               let y = 0;
+               let z = 0;
+               for (let i = 1; i < 900; i++) {
+                   var selectedRangeK = $("#myRange").val();
+           var selectedRangeT = $("#myRange2").val();
+                   y = 300-(selectedRangeK*(1-e**-(i/selectedRangeT)));
+                   ctx.lineTo(i+100,y);
+                   z = i;
+               }
+               ctx.stroke();
+           }
+ 
+           function clearUkladIWykresy() {
+               ctx.clearRect(0,0,canvas.width,canvas.height);
+           }
+       </script>
+    </canvas>
+</body>
     </div>
   </section>
 
@@ -161,7 +260,7 @@
               <i class="fas fa-map-marked-alt text-primary mb-2"></i>
               <h4 class="text-uppercase m-0">Address</h4>
               <hr class="my-4">
-              <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+              <div class="small text-black-50">61-142 Poznan</div>
             </div>
           </div>
         </div>
@@ -173,7 +272,7 @@
               <h4 class="text-uppercase m-0">Email</h4>
               <hr class="my-4">
               <div class="small text-black-50">
-                <a href="#">hello@yourdomain.com</a>
+                <a href="#">przybysz231@gmail.com</a>
               </div>
             </div>
           </div>
@@ -185,7 +284,7 @@
               <i class="fas fa-mobile-alt text-primary mb-2"></i>
               <h4 class="text-uppercase m-0">Phone</h4>
               <hr class="my-4">
-              <div class="small text-black-50">+1 (555) 902-8832</div>
+              <div class="small text-black-50">+48 *** *** ***</div>
             </div>
           </div>
         </div>
@@ -209,7 +308,7 @@
   <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
     <div class="container">
-      Copyright &copy; Your Website 2019
+      Copyright &copy; Michał Przybysz 2019
     </div>
   </footer>
 
