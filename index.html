@@ -44,6 +44,12 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#projects">HTML Forms</a>
           </li>
+           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#animation">Canvas animation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="game.html">JS Game</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
           </li>
@@ -124,7 +130,7 @@
  
 <body>
     <div class="slidecontainer">
-        <input type="range" min="1" max="200" value="50" class="slider" id="myRange">
+        <input type="range" min="1" max="200" value="100" class="slider" id="myRange">
         <p>k: <span id="demo"></span></p>
     </div>
   
@@ -226,8 +232,230 @@
        </script>
     </canvas>
 </body>
-    </div>
+<!-- <body>
+<svg width="1200" height="610">
+  <g fill="none" stroke="black" stroke-width="4">
+    <path stroke-dasharray="10,10" d="M0 590 l1300 0" />
+  </g>
+  <g fill="none" stroke="black" stroke-width="4">
+    <path stroke-dasharray="10,10" d="M460 15 l1300 0" />
+  </g>
+  <g fill="none" stroke="black" stroke-width="4">
+    <path stroke-dasharray="10,10" d="M460 580 l0 -550" />
+  </g>
+    <polyline points="0,580 450,580 450,5 1300,5"
+   style="fill:none;stroke:black;stroke-width:4" />
+   <polyline points="0,600 470,600"
+   style="fill:none;stroke:black;stroke-width:4" />
+   <polyline points="470,580 470,25 1300,25"
+   style="fill:none;stroke:black;stroke-width:4" />
+    <polyline points="470,600 1300,600"
+   style="fill:none;stroke:black;stroke-width:4" />
+    <polyline points="470,580 1300,580"
+   style="fill:none;stroke:black;stroke-width:4" />
+    <rect x="200" y="100" width="150" height="200" style="fill:blue;stroke-width:3;stroke:black" />
+  <circle cx="360" cy="200" r="40" stroke="black" stroke-width="3" fill="white" />
+  <rect x="353" y="150" width="60" height="100" style="fill:white;stroke-width:3;stroke:white" />
+  <rect x="200" y="350"width="120" height="200" style="fill:green;stroke-width:3;stroke:grey" />
+  <rect x="730" y="200" width="70" height="160" style="fill:orange;stroke-width:3;stroke:black" />
+  <rect x="600" y="200" width="70" height="160" style="fill:orange;stroke-width:3;stroke:black" />
+  <rect x="670" y="270" width="60" height="20" style="fill:orange;stroke-width:3;stroke:black" />
+  <rect x="670" y="400" width="70" height="160" style="fill:purple;stroke-width:3;stroke:black" />
+  <rect x="850" y="300" width="70" height="140" style="fill:grey;stroke-width:3;stroke:black" />
+  <rect x="950" y="300" width="70" height="140" style="fill:grey;stroke-width:3;stroke:black" />
+  <rect x="1050" y="300" width="70" height="140" style="fill:grey;stroke-width:3;stroke:black" />
+  <rect x="1050" y="120" width="70" height="140" style="fill:grey;stroke-width:3;stroke:black" />
+
+    <rect x="0" y="0" width="30" height="10"
+        style="stroke:black; fill:red;">
+      <animateMotion
+              path="M10,585 L455,585 L455,10 L1300,10 "
+              begin="0s" dur="6s" repeatCount="indefinite" rotate="auto"/> 
+          </rect>
+     <rect x="0" y="0" width="30" height="10"
+        style="stroke:black; fill:blue;">
+      <animateMotion
+              path="M20,585 L1300,585 "
+              begin="0s" dur="3s" repeatCount="indefinite" rotate="auto"/> 
+          </rect>
+
+
+</svg>
+<!-- <canvas id="boy" width = "300" height = "232">  
+</canvas>
+<script>
+
+var boy = new Image (653, 183);
+boy.src = "img/boy2.PNG";
+
+var shot = 1;
+var shotAmount = 6;
+var shotWidth = boy.width / shotAmount;
+var shotHeight = boy.height;
+var elem = document.getElementById('boy').getContext('2d');
+
+boy.onload = function () {
+  setInterval('draw()', 65);
+}
+
+function draw() {
+    elem.fillStyle = "#111";
+    elem.fillRect(0, 0, 0, 183);
+
+    shot++;
+    if (shot > shotAmount) {
+        shot = 1;
+    }
+
+    var xshot = (shot-1)*shotWidth;
+    elem.drawImage(boy, xshot, 20, shotWidth, shotHeight, 0, 15, shotWidth, shotHeight)
+}
+</script>
+
+</body>
+</div> -->
   </section>
+
+   -->
+<!-- Animation section -->
+
+    <section id="animation">
+        <head>
+          <style>
+            #boy{
+                margin: 200px;
+                display: inline-block;
+                position: center;
+
+            }
+          </style>
+        </head>
+<body>
+<canvas id="boy" width = "300" height = "232">  
+</canvas>
+<script>
+
+var boy = new Image (653, 183);
+boy.src = "img/boy2.PNG";
+
+var shot = 1;
+var shotAmount = 6;
+var shotWidth = boy.width / shotAmount;
+var shotHeight = boy.height;
+var elem = document.getElementById('boy').getContext('2d');
+
+boy.onload = function () {
+  setInterval('draw()', 65);
+}
+
+function draw() {
+    elem.fillStyle = "#111";
+    elem.fillRect(0, 0, 0, 183);
+
+    shot++;
+    if (shot > shotAmount) {
+        shot = 1;
+    }
+
+    var xshot = (shot-1)*shotWidth;
+    elem.drawImage(boy, xshot, 20, shotWidth, shotHeight, 0, 15, shotWidth, shotHeight)
+}
+</script>
+</body>
+</div>
+</section>
+      
+<!-- JS game -->
+<!-- <section id="jsgame">
+ <p>
+  <center>
+ Use W S A D buttons to move
+</center>
+</p>
+<center>
+    <head>
+          <style>
+            #gc{
+                margin: 200px;
+                /*display: inline-block;*/
+                /*position: center;*/
+            }
+          </style>
+        </head>
+
+<canvas id="gc" width="400" height="400"></canvas>
+<script>
+window.onload=function() {
+    canv=document.getElementById("gc");
+    ctx=canv.getContext("2d");
+    document.addEventListener("keydown",keyPush);
+    setInterval(game,1000/15);
+}
+px=py=10;
+gs=tc=20;
+ax=ay=15;
+xv=yv=0;
+trail=[];
+tail = 5;
+function game() {
+    px+=xv;
+    py+=yv;
+    if(px<0) {
+        px= tc-1;
+    }
+    if(px>tc-1) {
+        px= 0;
+    }
+    if(py<0) {
+        py= tc-1;
+    }
+    if(py>tc-1) {
+        py= 0;
+    }
+    ctx.fillStyle="black";
+    ctx.fillRect(0,0,canv.width,canv.height);
+ 
+    ctx.fillStyle="lime";
+    for(var i=0;i<trail.length;i++) {
+        ctx.fillRect(trail[i].x*gs,trail[i].y*gs,gs-2,gs-2);
+        if(trail[i].x==px && trail[i].y==py) {
+            tail = 5;
+        }
+    }
+    trail.push({x:px,y:py});
+    while(trail.length>tail) {
+    trail.shift();
+    }
+ 
+    if(ax==px && ay==py) {
+        tail++;
+        ax=Math.floor(Math.random()*tc);
+        ay=Math.floor(Math.random()*tc);
+    }
+    ctx.fillStyle="red";
+    ctx.fillRect(ax*gs,ay*gs,gs-2,gs-2);
+}
+function keyPush(evt) {
+    switch(evt.keyCode) {
+        case 65:
+            xv=-1;yv=0;
+            break;
+        case 87:
+            xv=0;yv=-1;
+            break;
+        case 68:
+            xv=1;yv=0;
+            break;
+        case 83:
+            xv=0;yv=1;
+            break;
+    }
+}
+</script>
+
+</center>
+</section> -->
+
 
   <!-- Signup Section -->
   <section id="signup" class="signup-section">
@@ -236,18 +464,17 @@
         <div class="col-md-10 col-lg-8 mx-auto text-center">
 
           <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-          <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+          <h2 class="text-white mb-5">Enter password to open gallery!</h2>
 
           <form class="form-inline d-flex">
-            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-            <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter password...">
+            <button type="submit" class="btn btn-primary mx-auto">Enter</button>
           </form>
 
         </div>
       </div>
     </div>
   </section>
-
   <!-- Contact Section -->
   <section class="contact-section bg-black">
     <div class="container">
@@ -272,7 +499,7 @@
               <h4 class="text-uppercase m-0">Email</h4>
               <hr class="my-4">
               <div class="small text-black-50">
-                <a href="#">przybysz231@gmail.com</a>
+                <a href="mailto:przybysz231@gmail.com">przybysz231@gmail.com</a>
               </div>
             </div>
           </div>
@@ -291,19 +518,20 @@
       </div>
 
       <div class="social d-flex justify-content-center">
-        <a href="#" class="mx-2">
+        <a href="https://twitter.com/?lang=pl" class="mx-2">
           <i class="fab fa-twitter"></i>
         </a>
-        <a href="#" class="mx-2">
+        <a href="https://www.facebook.com/" class="mx-2">
           <i class="fab fa-facebook-f"></i>
         </a>
-        <a href="#" class="mx-2">
+        <a href="https://github.com/przybysz231" class="mx-2">
           <i class="fab fa-github"></i>
         </a>
       </div>
 
     </div>
   </section>
+
 
   <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
